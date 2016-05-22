@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <title>The-Cube</title>
+  <meta charset="utf-8">
+  <link href="dice.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="box1">
+    <input type="radio" checked id="radio-front" name="select-face"><label for="radio-front">Front</label>
+    <input type="radio" id="radio-back" name="select-face"><label for="radio-back">Back</label>
+    <input type="radio" id="radio-left" name="select-face"><label for="radio-left">Left</label>
+    <input type="radio" id="radio-right" name="select-face"><label for="radio-right">Right</label>
+    <input type="radio" id="radio-top" name="select-face"><label for="radio-top">Top</label>
+    <input type="radio" id="radio-bottom" name="select-face"><label for="radio-bottom">Back</label>
+
+<div class="scene">
+  <div class="cube">
+    <div class="cube-face front-face rfront"></div>
+    <div class="cube-face back-face rback"></div>
+    <div class="cube-face left-face rleft"></div>
+    <div class="cube-face right-face rright"></div>
+    <div class="cube-face top-face rtop"></div>
+    <div class="cube-face bottom-face rbottom"></div>
+  </div>
+</div>
+</div>
+
+
+<button id="StartA">Start Animation</button>
+<button id="Reset">Reset</button>
+<button id="randomFace">Random Face</button><span id="currentFace"></span>
+
+<div><button id="Random">Random Number</button></div>
+<div id="Entry"></div>
+
+<script src="jquery-2.2.3.min.js"></script>
+<script src="dice.js"></script>
+
+</body>
+</html>

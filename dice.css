@@ -1,0 +1,158 @@
+body{
+  margin:0;
+  padding:0;
+}
+
+button{
+  margin:20px;
+  padding:10px;
+  font-size:1em;
+}
+
+#box1 {
+  margin-top:100px;
+}
+
+#box1 input, #box1 label
+{display: none;
+}
+
+/*********Main Cube CSS***********/
+.scene, {/*Sets the "playground" for the cube*/
+  margin:auto; /*Centered in Div*/
+  width:150px;
+  perspective:1500px;
+}
+
+.cube{
+  margin-top:80px;
+  margin:auto;
+  width:150px;
+  height:150px;
+  position:relative;
+  transform-style: preserve-3d;
+}
+
+.cube-face {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+}
+
+.front-face{
+  background:red;
+  transform:translate3d(0,0,75px);
+}
+
+.back-face{
+  background:yellow;
+  transform:rotateY(180deg) translate3d(0,0,75px);
+}
+
+.left-face{
+  background: orange;
+  transform: rotateY(-90deg) translate3d(0, 0, 75px);
+}
+
+.right-face{
+  background:lime;
+  transform: rotateY(90deg) translate3d(0, 0, 75px);
+}
+
+.top-face {
+  background:blue;
+  transform: rotateX(90deg) translate3d(0, 0, 75px);
+}
+
+.bottom-face {
+  background:magenta;
+  transform: rotateX(-90deg) translate3d(0, 0, 75px);
+}
+
+
+
+
+
+/**** Radio Button Interactions ****/
+#radio-front:checked ~ .scene .cube {
+  transform:rotateX(0deg) rotateY(0deg);
+  transition:2s;
+}
+
+#radio-back:checked ~ .scene .cube {
+  transform: rotateY(180deg);
+  transition:2s;
+}
+
+#radio-left:checked ~ .scene .cube {
+  transform: rotateY(90deg);
+  transition:2s;
+}
+#radio-right:checked ~ .scene .cube {
+  transform: rotateY(-90deg);
+  transition:2s;
+}
+#radio-top:checked ~ .scene .cube {
+  transform: rotateX(-90deg);
+  transition:2s;
+}
+#radio-bottom:checked ~ .scene .cube {
+  transform: rotateX(90deg);
+  transition:2s;
+}
+
+
+
+
+
+
+/*CSS CUBE ROTATIONS*/
+/*.rfront{
+  transform:rotateX(0deg) rotateY(0deg);
+  transition:2s;
+}
+.rback{
+  transform: rotateY(180deg);
+  transition:2s;
+}
+.rleft{
+  transform: rotateY(90deg);
+  transition:2s;
+}
+.rright{
+  transform: rotateY(-90deg);
+  transition:2s;
+}
+.rtop{
+  transform: rotateX(-90deg);
+  transition:2s;
+}
+.rbottom{
+  transform: rotateX(90deg);
+  transition:2s;
+}*/
+
+/*.scene .cube{
+  transform-style:preserve-3d;
+  animation-name: boxRoll;
+  animation-duration:6s;
+}*/
+
+
+@keyframes boxRoll
+{
+from {}
+10% {transform: translateX(75px) rotateY(180deg);}
+20% {transform: translateX(-75px) rotateY(90deg);}
+30% {transform: rotateY(-90deg);}
+40% {transform: translateY(75px) rotateX(-90deg);}
+50% {transform: translateY(-75px) rotateX(90deg);}
+to{transform: rotateX(0deg) rotateY(0deg);}
+}
+
+/*.scene2 .cube2{
+  transform-style:preserve-3d;
+  animation-name: rotateBox2;
+  animation-duration:10s;
+  animation-iteration-count: infinite;
+}*/
