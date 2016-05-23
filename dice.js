@@ -1,8 +1,8 @@
 var sceneCSS = {
   "transform-style":"preserve-3d",
   "animation-name": "boxRoll",
-  "animation-duration": "3s",
-  "animation-iteration-count": "infinite"
+  "animation-duration": "2s",
+  // "animation-iteration-count": "infinite"
 };
 
 var reset = {
@@ -13,14 +13,22 @@ var reset = {
 
 
       $("#StartA").on("click", function()
-        {$(".scene .cube").css(sceneCSS);}
+        { $(".scene .cube").css(sceneCSS); }
       );
+
+      $("#StartB").on("click", function() //Stops StartA from working after pressed ...
+        {
+          $(".scene .cube").toggleClass("sceneCSS",100);
+          $("#StartB").toggleClass();//Change HTML Button Name?
+        });
+
 
       $("#Reset").on("click", function(){
         $(".scene .cube").css(reset);
         $("input[id=radio-front]").prop("checked",true);
         document.getElementById("currentFace").innerHTML="";
       });
+
 
       $("#Random").on("click", function(){
         var randomNum = Math.floor(Math.random() * 6) + 1; //Returns 1-6

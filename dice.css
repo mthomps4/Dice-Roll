@@ -132,11 +132,17 @@ button{
   transition:2s;
 }*/
 
-/*.scene .cube{
+.sceneCSS{
   transform-style:preserve-3d;
   animation-name: boxRoll;
-  animation-duration:6s;
-}*/
+  animation-duration:2s;
+}
+
+.reset{
+  transform-style:;
+  animation-name:;
+  animation-duration:;
+}
 
 
 @keyframes boxRoll
