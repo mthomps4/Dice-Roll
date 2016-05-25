@@ -1,15 +1,15 @@
-// var dice = document.querySelector(".scene .cube");
-//
-// var play = dice.animate([
-//   {transform: "rotateX(0px)"},
-//   {transform: "rotateX(90px)"},
-//   {transform: "rotateX(-90px)"},
-//   {transform: "rotateX(180px)"},
-//   {transform: "rotateY(90px)"},
-//   {transform: "rotateY(-900px)"}
-// ], 1000);
-//
-// $("#StartB").on("click", function(){
-//   dice.animate
-//
-// });
+// var cube = $(".scene .cube");
+// var animate = TweenMax.to(cube, 3, {opacity:.5;});
+var i=90;
+
+$("#StartB").on("click", function(){
+  var cube = $(".scene .cube");
+  TweenLite.to(cube, 1, {transform: "rotateX("+i+"deg)"});
+  i+=90;
+});
+
+$("#StartC").on("click", function(){
+  var cube = $(".scene .cube");
+  TweenLite.to(cube, 1, {transform: "rotateY("+i+"deg)"});
+  i+=90;
+});
