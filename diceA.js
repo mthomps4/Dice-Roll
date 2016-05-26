@@ -5,12 +5,14 @@ var buttonY = document.getElementById("StartB");
 var buttonX = document.getElementById("StartC");
 var Cube = document.querySelectorAll(".scene .cube");
 
-buttonX.onclick = function(){
-  TweenLite.to(Cube, 1, {transform: "rotateX("+i+"deg)"});
-  i+=90;
-}
+var RotateX = function(){
+  TweenLite.to(Cube, .2, {transform: "rotateX("+i+"deg)"});
+  i+=90;}
 
-buttonY.onclick = function(){
-  TweenLite.to(Cube, 1, {transform: "rotateY("+i+"deg)"});
-  i+=90;
-}
+var RotateY = function (){
+  TweenLite.to(Cube, .2, {transform: "rotateY("+i+"deg)"});
+  i+=90;}
+
+buttonX.onclick = RotateX;
+
+buttonY.onclick = RotateY;
