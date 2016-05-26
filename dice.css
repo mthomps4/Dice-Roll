@@ -21,7 +21,7 @@ button{
 .scene, {/*Sets the "playground" for the cube*/
   margin:auto; /*Centered in Div*/
   width:150px;
-  perspective:1500px;
+  perspective:250px;
 }
 
 .cube{
