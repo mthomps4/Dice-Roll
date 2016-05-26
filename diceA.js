@@ -30,6 +30,7 @@ var RotateX = function (){
   TweenMax.to(Cube, .5, {transform: "rotateY("+i+"deg)"});
   i+=90;}
 
+//Place this in function to control time to button specific action
 var tl = new TimelineMax();
 
     tl.from(Cube, 1, {rotationX:0})
@@ -38,8 +39,8 @@ var tl = new TimelineMax();
     .to(Cube, 1, {rotationX:270})
     .to(Cube, 1, {rotationX:360});
 
-    tl.totalDuration(2);
-    // tl.timeScale(2);
+    // tl.totalDuration(2);
+    tl.timeScale(6);
 
 
 var start = function(){tl.restart();};
