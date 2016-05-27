@@ -19,9 +19,9 @@ button{
 
 /*********Main Cube CSS***********/
 .scene, {/*Sets the "playground" for the cube*/
-  margin:auto; /*Centered in Div*/
-  width:150px;
-  perspective:250px;
+  /*margin:auto; /*Centered in Div*/*/
+  /*width:150px;
+  perspective:250px;*/
 }
 
 .cube{
@@ -29,7 +29,7 @@ button{
   margin:auto;
   width:150px;
   height:150px;
-  position:relative;
+  /*position:relative;*/
   transform-style: preserve-3d;
 }
 
