@@ -34,39 +34,63 @@ button{
 }
 
 .cube-face {
-  width: inherit;
-  height: inherit;
+  width: 150px;
+  height: 150px;
   position: absolute;
 }
 
 .front-face{
   background:red;
   transform:translate3d(0,0,75px);
+  /*border-radius:20px;*/
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  background: url("images/D_DieFace1.jpg");
+  background-size: contain;
 }
 
 .back-face{
   background:yellow;
   transform:rotateY(180deg) translate3d(0,0,75px);
+    /*border-radius:20px;*/
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    background: url("images/D_DieFace2.jpg");
+    background-size: contain;
 }
 
 .left-face{
   background: orange;
   transform: rotateY(-90deg) translate3d(0, 0, 75px);
+    /*border-radius:20px;*/
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    background: url("images/D_DieFace3.jpg");
+    background-size: contain;
 }
 
 .right-face{
   background:lime;
   transform: rotateY(90deg) translate3d(0, 0, 75px);
+    /*border-radius:20px;*/
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    background: url("images/D_DieFace4.jpg");
+    background-size: contain;
 }
 
 .top-face {
   background:blue;
   transform: rotateX(90deg) translate3d(0, 0, 75px);
+    /*border-radius:20px;*/
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    background: url("images/D_DieFace5.jpg");
+    background-size: contain;
 }
 
 .bottom-face {
   background:magenta;
   transform: rotateX(-90deg) translate3d(0, 0, 75px);
+    /*border-radius:20px;*/
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    background: url("images/D_DieFace6.jpg");
+    background-size: contain;
 }
 
 

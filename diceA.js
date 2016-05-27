@@ -14,7 +14,7 @@ var Cube = document.querySelectorAll(".cube");
 var Scene = document.querySelectorAll(".scene");
 var i = 0;
 
-TweenMax.set(Cube, {perspective:0});
+TweenMax.set(Scene, {perspective:0});
 
 //Rotates through cubeFace array on each click.
 //If i>cubeFace reset to 0 and preform 1st step.
@@ -47,10 +47,7 @@ var tl = new TimelineMax({paused:true, repeat:5});
     .to(Scene,1, {scale:.2},"-=1")
     .to(Cube, 1, {x:500}, "-=1")
     // .to(Scene, 1, {scale:1}, "-=.5")
-
-
     // .to(Cube, 1, {rotation:0}, "-=1");
-
     // tl.totalDuration(2);
     tl.timeScale(1);
 
