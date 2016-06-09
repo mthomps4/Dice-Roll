@@ -1,9 +1,6 @@
 # Dice-Roll
-Fork from The-Cube repo to create a random faced die roll. 
+Fork from The-Cube repo to create a random faced die roll.
 
-#Plan
-- Create a random number generator 
-- Create a random face generator for the Cube 
-- Create animation for "roll" 
-- Combine elements with animation ending on random face to simulate Die Roll 
-- Update CSS with die images
+- dice.js used to test turns with radio buttons.
+- "now live" diceA.js -- used for random dice roll and other animations.
+- Vanilla JavaScript and Greensock used for animations.
