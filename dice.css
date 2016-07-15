@@ -1,23 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+
+/***Main CSS ***/
 body{
   margin:0;
   padding:0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+  margin:0;
+  padding:0;
+  height:150px;
+  background-color:#673AB7;
+  color:white;
+  text-align: center;
+}
+
+header h1 {
+  margin:0;
+  padding:10px;
+  padding-top:1.5em;
+  font-weight: 500;
+}
+
+header h3 {
+  margin:0;
+  font-weight: 300;
 }
 
 button{
   margin:20px;
   padding:10px;
   font-size:1em;
+  background-color:#3F51B5;
+  color:white;
+  font-weight: 500;
 }
 
+#Roll{
+  margin-top: 20px;
+  display:flex;
+  justify-content: center;
+}
+
+#animationWrap{
+  text-align: center;
+}
+
+#animations{
+  display:flex;
+  justify-content: center;
+}
+
+
+/*********The Cube CSS***********/
 #box1 {
   margin-top:100px;
 }
 
 #box1 input, #box1 label
-{display: none;
+{
+  display: none;
 }
 
-/*********Main Cube CSS***********/
+
 .scene, {/*Sets the "playground" for the cube*/
   /*margin:auto; /*Centered in Div*/*/
   /*width:150px;
@@ -97,6 +143,10 @@ button{
 
 
 
+
+
+/***** NOT IN USE REFER TO diceA.js*****/
+
 /**** Radio Button Interactions ****/
 #radio-front:checked ~ .scene .cube {
   transform:rotateX(0deg) rotateY(0deg);
@@ -124,10 +174,6 @@ button{
   transform: rotateX(90deg);
   transition:2s;
 }
-
-
-
-
 
 
 /*CSS CUBE ROTATIONS*/

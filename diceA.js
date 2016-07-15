@@ -12,7 +12,8 @@ var buttonY = document.getElementById("StartB"); //Rotate Y Button (Still Rotate
 var buttonX = document.getElementById("StartC"); // Rotate X Button
 var Cube = document.querySelectorAll(".cube");
 var Scene = document.querySelectorAll(".scene");
-var i = 0;
+var i = 90;
+var j = 0;
 
 TweenMax.set(Scene, {perspective:0});
 
@@ -36,25 +37,18 @@ var RotateX = function (){
   i+=90;}
 
 //Random Experimental Scene
-var tl = new TimelineMax({paused:true, repeat:2});
+var tl = new TimelineMax({paused:true, repeat:3});
     tl.yoyo(true);
     tl.to(Cube, 1, {rotation:360})
-    // .to(Scene, 1, {scale:.5}, "-=1")
-    // .to(Scene, 1, {scale:.1},  "-=1")
-    // .to(Cube, 1, {rotationX:90}, "-=1")
-    // .to(Scene, 1, {scale:1.3}, "-=.5")
-    // .to(Cube, 1, {rotationY:90}, "-=1")
-    // .to(Cube, 1, {rotation:0}, "-=1")
+
     .to(Cube, 1, {rotationY:360, rotationX:360}, "-=1")
     .to(Scene,1, {scale:.2},"-=1")
     .to(Cube, 1, {x:500}, "-=1")
-    // .to(Scene, 1, {scale:1}, "-=.5")
-    // .to(Cube, 1, {rotation:0}, "-=1");
-    // tl.totalDuration(2);
+
     tl.timeScale(1);
 
-
 var start = function(){tl.restart();};
+
 startAnimation.onclick = start;
 buttonX.onclick = RotateY;
 buttonY.onclick = RotateX;

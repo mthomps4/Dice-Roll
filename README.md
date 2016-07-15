@@ -1,6 +1,12 @@
 # Dice-Roll
-Fork from The-Cube repo to create a random faced die roll.
+CSS Cube and Greensock to create a random faced die roll.
 
-- dice.js used to test turns with radio buttons.
-- "now live" diceA.js -- used for random dice roll and other animations.
+###Finished Files
+- diceA.js -- used for random dice roll and other animations.
 - Vanilla JavaScript and Greensock used for animations.
+
+
+###Dev files
+##### Commented Out After Setup
+- CSS keyframes
+- dice.js and Jquery used to test CSS Cube Keyframe with radio buttons.
